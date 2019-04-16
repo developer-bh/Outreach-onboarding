@@ -1,0 +1,44 @@
+$r-768: 768px
+$r-992: 992px
+$r-1024: 1024px
+$r-1200: 1200px
+
+body
+  // break max-992
+  @media only screen and (max-width: $r-992)
+    .header
+      position: relative
+    .onboard_section
+      padding: 30px 0 0 0
+    .login
+      padding-bottom: 30px
+      &__form
+        margin-bottom: 30px
+      &__logos
+        img
+          width: 145px
+          margin-bottom: 20px
+    .signup
+      &__text
+        p
+          width: 100%
+    .togo, .welcome, .more
+      padding: 30px 0
+
+  // break max-768
+  @media only screen and (max-width: $r-768 - 1)
+    .show_mobile
+      display: block
+    .show_desctop
+      display: none
+    .onboard_section
+      form
+        width: 100%
+    .signup
+      &__img
+        position: initial
+        width: 100%
+      &__text
+        order: 2
+        margin: 0 auto
+

@@ -1,0 +1,80 @@
+// Welcome
+
+.welcome
+  min-height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
+  background-image: url("../img/bg_welcome.svg")
+  background-repeat: no-repeat
+  background-size: cover
+  &__text
+    text-align: center
+    margin-bottom: 70px
+    .title
+      color: #1a1a1a
+      font-family: 'yorkten-slab-normal', sans-serif
+      font-size: 36px
+      font-weight: 500
+      line-height: 43.2px
+      margin-bottom: 12px
+    p
+      color: #999999
+      font-family: "San Francisco", sans-serif
+      font-size: 24px
+      font-weight: 400
+      line-height: 28.8px
+  &_list
+    margin-bottom: 40px
+    &__item
+      width: 100%
+      padding: 30px 40px 20px 40px
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.08)
+      border-radius: 19px
+      background-color: white
+      margin-bottom: 30px
+      img
+        margin-bottom: 20px
+        width: 43px
+      .title
+        color: #283238
+        font-family: "San Francisco", sans-serif
+        font-size: 24px
+        font-weight: 700
+        letter-spacing: 1.2px
+        line-height: 28.8px
+        margin-bottom: 23px
+      p
+        color: #000
+        font-family: "San Francisco", sans-serif
+        font-size: 18px
+        font-weight: 300
+        line-height: 21.6px
+  &__navigation
+    ul
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      width: 100%
+      padding: 0
+      margin: 0
+      li
+        display: flex
+        align-items: center
+        list-style: none
+        padding: 0 10px
+        position: relative
+        &:first-child
+          &:before
+            position: absolute
+            content: ''
+            right: 0
+            height: 70%
+            width: 1px
+            background-color: #1da1f2
+        a
+          color: #1da1f2
+          font-family: "San Francisco", sans-serif
+          font-size: 16px
+          font-weight: 400
+          line-height: 30px
