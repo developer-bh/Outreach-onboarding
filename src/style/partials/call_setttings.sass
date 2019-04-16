@@ -1,0 +1,69 @@
+// Call settings
+
+.call
+  display: flex
+  align-items: center
+  justify-content: center
+  &:before
+    left: 0
+    right: initial
+  &__wrapper
+    align-items: center
+    justify-content: space-between
+  &__icon
+    text-align: center
+  &_info
+    display: flex
+    justify-content: flex-end
+    &__number
+      display: none
+      .onboard_additional
+        margin-bottom: 0
+        p
+          margin-bottom: 0
+    &__text
+      width: 510px
+      max-width: 100%
+      p
+        margin-bottom: 20px
+      form
+        padding: 15px 0
+        border-top: 1px solid #e5e5e5
+        border-bottom: 1px solid #e5e5e5
+        margin-bottom: 40px
+        .title
+          color: black
+          font-size: 20px
+          font-weight: 500
+          margin-bottom: 10px
+        p
+          text-align: left
+        .resend_code
+          margin-right: 5px
+        .verify_call
+          margin-left: 5px
+          outline: 0
+        input
+          border-radius: 4px
+          outline: 0
+          margin-bottom: 12px
+          padding-left: 15px
+        .selected-flag
+          border-right: 1px solid #e5e5e5
+        input[type="tel"], input[type="number"]
+          min-width: 227px
+          height: 50px
+          border: 1px solid #e5e5e5
+        input[type="submit"]
+          text-transform: uppercase
+          color: white
+          font-size: 14px
+          font-weight: 600
+          padding: 0 20px
+          letter-spacing: 1.4px
+          margin-left: 18px
+          width: 130px
+          height: 50px
+          background-color: #03beff
+          border: 0
+          transition: 0.3s
