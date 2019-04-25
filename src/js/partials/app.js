@@ -1,5 +1,13 @@
 $( document ).ready(function() {
 
+    // Welcome active
+
+    $('.welcome_list__item').on( "click", function(e) {
+        e.preventDefault();
+        $('.welcome_list__item').removeClass('active');
+        $(this).addClass('active');
+    });
+
     // Phone number
 
     var input = document.querySelector("#phone");
@@ -20,6 +28,7 @@ $( document ).ready(function() {
             }
         });
     });
+
 });
 
 

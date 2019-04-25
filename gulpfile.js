@@ -57,12 +57,12 @@ var config = {
 };
 
 gulp.task('bower', function () {
-    gulp.src('./src/*.html')
+    gulp.src('./build/*.html')
         .pipe(wiredep({
             optional: 'configuration',
             goes: 'here'
         }))
-        .pipe(gulp.dest('./src'));
+        .pipe(gulp.dest('./build'));
 });
 
 gulp.task('html:build', function () {

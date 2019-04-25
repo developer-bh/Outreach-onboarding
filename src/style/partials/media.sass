@@ -7,14 +7,22 @@ body
   // break max-992
   @media only screen and (max-width: $r-992)
     .header
+      padding: 10px 0
       position: relative
+      &__logo
+        img
+          width: 110px
     .onboard_section
-      padding: 30px 0 0 0
+      padding: 20px 0 0 0
+      display: flex
+      justify-content: center
+      align-items: center
     .login
-      padding-bottom: 30px
+      padding-bottom: 20px
       &__form
         margin-bottom: 30px
       &__logos
+        display: none
         img
           width: 145px
           margin-bottom: 20px
@@ -33,6 +41,135 @@ body
           form
             input[type='submit']
               margin: 10px 0
+    .onboard_form
+      .title
+        font-size: 24px
+        line-height: 1.5
+        margin-bottom: 10px
+      p
+        font-size: 18px
+        line-height: 1.5
+        margin-bottom: 20px
+    .login
+      &__wrapper
+        margin-bottom: 20px
+      &__form
+        margin-bottom: 20px
+      &__image
+        display: none
+      &__logos
+        .title
+          margin-bottom: 20px
+        img
+          margin-bottom: 10px
+    .onboard_form
+      form
+        input[type='email'],
+        input[type='password'],
+        input[type='text']
+          height: 35px
+          font-size: 14px
+          margin-bottom: 20px
+          &::placeholder
+            font-size: 14px
+        input[type="submit"]
+          height: 35px
+          font-size: 14px
+          margin-bottom: 20px
+      .onboard_additional
+        margin-bottom: 10px
+
+    .signup
+      &__img
+        display: none!important
+      &__text
+        display: none
+
+    .welcome
+      padding: 20px 0
+      background-image: none!important
+      &__text
+        margin-bottom: 20px
+        .title
+          text-align: left
+          font-size: 24px
+          line-height: 1.5
+        p
+          text-align: left
+          font-size: 18px
+    .welcome_list
+      margin-bottom: 20px
+      &__item
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        padding: 10px
+        margin-bottom: 20px
+        img
+          width: 30px
+          margin-bottom: 10px
+        .title
+          font-size: 18px
+          margin-bottom: 10px
+          line-height: 1.5
+        p
+          font-size: 14px
+    .welcome_list_item
+      &__text
+        padding-left: 10px
+
+    .more
+      padding: 20px 0
+      background-image: none!important
+      &__text
+        margin-bottom: 20px
+        .title
+          font-size: 24px
+          line-height: 1.5
+          text-align: left
+          margin-bottom: 10px
+        p
+          font-size: 18px
+          line-height: 1.5
+          text-align: left
+          margin-bottom: 10px
+      &__form
+        form
+          label
+            margin-bottom: 20px
+            font-size: 14px
+            select
+              height: 35px
+              font-size: 14px
+
+    .call
+      &__icon
+        display: none
+    .call_info
+      &__text
+        form
+          .title
+            font-size: 18px
+
+    .togo
+      &__text
+        img
+          width: 100px
+        .title
+          font-size: 24px
+          line-height: 1.5
+          margin-bottom: 10px
+        p
+          font-size: 18px
+          line-height: 1.5
+          margin-bottom: 20px
+        .btn_togo
+          height: 35px
+          font-size: 14px
+      &__additional
+        p
+          font-size: 14px
+
 
   // break max-768
   @media only screen and (max-width: $r-768 - 1)
